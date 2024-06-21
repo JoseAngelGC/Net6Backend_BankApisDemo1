@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Mediator\Features\Clients\Validators\" />
+  </ItemGroup>
+	
+  <ItemGroup>
+    <ProjectReference Include="..\BancoApis.DomainModel\BancoApis.DomainModel.csproj" />
+    <ProjectReference Include="..\BancoApis.DomainServices\BancoApis.DomainServices.csproj" />
+  </ItemGroup>
+	
+  <ItemGroup>
+	  <InternalsVisibleTo Include="BancoApis.Middlewares" />
+  </ItemGroup>
+
+</Project>
